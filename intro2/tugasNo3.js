@@ -4,11 +4,11 @@
 
 
 function seleksiNilai(nilaiAwal, nilaiAkhir, dataArray) {
-    if (typeof !nilaiAwal == 'number'){
+    if (typeof nilaiAwal !== 'number'){
         console.log('Nilai awal harus angka')
         return   
 
-    } else if (typeof !nilaiAkhir == 'number'){
+    } else if (typeof nilaiAkhir !== 'number'){
         console.log('Nilai akhir harus angka')
         return
 

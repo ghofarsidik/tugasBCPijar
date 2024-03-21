@@ -20,5 +20,5 @@ function seleksiNama(hasilCari, banyakNama){
     return hasilSeleksi
 }
 
-let search = cariNama("an", 3, seleksiNama)
+let search = cariNama("sulit", 3, seleksiNama)
 console.log(search);
