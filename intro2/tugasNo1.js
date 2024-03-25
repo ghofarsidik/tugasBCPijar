@@ -64,3 +64,4 @@ contoh*/
 // console.log(Math.round(4.4));
 // console.log(Math.ceil(4.4));
 // console.log(Math.floor(4.4));
+
