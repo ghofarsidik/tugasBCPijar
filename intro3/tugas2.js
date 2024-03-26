@@ -12,8 +12,8 @@ const getMonth = (callback) => {
 
 const showMonth = (error, month) => {
     if (!error) {
-        mapMonth = month.map( month => month)
-        console.log(mapMonth);
+        month.map((month, index) => console.log(`${index + 1}. ${month}`));
+
     } else {
         console.error(error.message);
     }
