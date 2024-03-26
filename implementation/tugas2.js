@@ -31,7 +31,7 @@ const totalPrice = (price, voucher, distance, tax) => {
     }
 
     //perhitungan biaya pajar
-    if (tax = true) {
+    if (tax == true) {
         taxValue = 5/100 * price
     } else {
         taxValue = 0
@@ -80,6 +80,6 @@ const totalPrice = (price, voucher, distance, tax) => {
     ------------------------------`);
 }
 
-totalPrice(40000, "PIJARFOOD5", 10, true)
+totalPrice(40000, "PIJARFOOD5", 10, false)
 // totalPrice(60000, "DITRAKTIRPIJAR", 3, true)
 // totalPrice(20000, '', 3, true)
