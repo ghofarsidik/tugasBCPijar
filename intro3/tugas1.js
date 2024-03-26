@@ -14,25 +14,26 @@ const cekHariKerja = (day) => {
     })
 }
 
-//1. try catch
+// 1. try catch
 
-// const startApp = async() => {
-//     try {
-//     dateToday = new Date().getDay()
-//     const today = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'][dateToday];
-//     const result = await cekHariKerja(today)
-//     console.log(`${result} adalah hari kerja`)
-//     } catch (error) {
-//     console.log(error)
-//     }
-// }
-// startApp()
+const startApp = async() => {
+    try {
+    dateToday = new Date().getDay()
+    const today = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'][dateToday];
+    const result = await cekHariKerja(today)
+    console.log(`${result} adalah hari kerja`)
+    } catch (error) {
+    console.log(error)
+    }
+}
+startApp()
 
 
 //pembatas--------------------------------------------------------------------------------------------------------
 
 
 //2. then catch
+
 // const dateToday = new Intl.DateTimeFormat('id-ID', { weekday: 'long' }).format(new Date())
 // cekHariKerja(dateToday)
 // .then (day => {
