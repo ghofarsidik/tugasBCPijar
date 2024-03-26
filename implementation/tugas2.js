@@ -41,6 +41,7 @@ const totalPrice = (price, voucher, distance, tax) => {
     if (voucher === "PIJARFOOD5"){
         if (price < 50000){
         console.log ('kode voucher PIJARFOOD tidak dapat digunakan karena tidak memenuhi minimal pemesanan 50.000')
+        discountValue = 0
         }
         if (price >= 50000) {
             discount = price * 50/100
@@ -53,6 +54,7 @@ const totalPrice = (price, voucher, distance, tax) => {
     }else if (voucher === "DITRAKTIRPIJAR"){
         if (price < 25000){
         console.log ('kode voucher DITRAKTIRPIJAR tidak dapat digunakan karena tidak memenuhi minimal pemesanan 25.000')
+        rdiscountValue = 0
         }
         if (price >= 25000) {
             discount = price * 60/100
@@ -78,6 +80,6 @@ const totalPrice = (price, voucher, distance, tax) => {
     ------------------------------`);
 }
 
-// totalPrice(100000, "PIJARFOOD5", 10, true)
+totalPrice(40000, "PIJARFOOD5", 10, true)
 // totalPrice(60000, "DITRAKTIRPIJAR", 3, true)
-totalPrice(20000, '', 3, true)
+// totalPrice(20000, '', 3, true)

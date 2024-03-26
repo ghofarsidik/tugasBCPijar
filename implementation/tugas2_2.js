@@ -1,3 +1,5 @@
+//sampel lain dengan asumsi diskon dihitung berdasarkan total harga
+
 const totalPrice = (price, voucher, distance, tax) => {
     if (typeof price !== 'number'){
         console.log("input harga harus angka")
@@ -34,6 +36,7 @@ const totalPrice = (price, voucher, distance, tax) => {
     if (voucher = "PIJARFOOD5"){
         if (price < 50000){
         console.log ('kode voucher tidak dapat digunakan karena tidak memenuhi minimal pemesanan 50.000')
+        discountValue = 0
         }
         if (price >= 50000) {
             discount = subTotal1 * 50/100
@@ -46,6 +49,7 @@ const totalPrice = (price, voucher, distance, tax) => {
     }else if (voucher = "DITRAKTIRPIJAR"){
         if (price < 25000){
         console.log ('kode voucher tidak dapat digunakan karena tidak memenuhi minimal pemesanan 50.000')
+        discountValue = 0
         }
         if (price >= 25000) {
             discount = subTotal1 * 60/100
